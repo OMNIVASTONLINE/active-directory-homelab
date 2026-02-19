@@ -1,0 +1,5 @@
+TicketID,Date,Category,User/Device,Issue,Symptoms,RootCause,Resolution,Evidence
+1001,2026-02-19,Domain Join,PC1,Domain not found / join issues,Client could not locate corp.local,Incorrect DNS/adapter configuration,Configured lab network and client DNS to point to DC; verified DC discovery and joined domain,screenshots/03-client-joined-corp-local.png
+1002,2026-02-19,Account/Password,sales-ali,Force password change scenario needed,User must change password at next logon not applying,PasswordNeverExpires set to True,Disabled PasswordNeverExpires then enabled ChangePasswordAtLogon; documented setting,screenshots/05-password-change-next-logon.png
+1003,2026-02-19,Group Policy,Corp Workstations,Disable USB storage,Need to block USB storage access,Policy requirement,GPO created to disable USBSTOR; exported GPO report,screenshots/07-gpo-usb-report-1.png
+1004,2026-02-19,Access Control,HR/Sales Users,Group membership management,Need department-based access control,Users not assigned to groups,Added users to appropriate GG_* groups; verified Member Of,screenshots/01-aduc-memberof-gg-hr.png
