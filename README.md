@@ -30,22 +30,28 @@ Built a small corporate-style Active Directory environment to demonstrate common
 - Created GPO to disable USB storage (USBSTOR) and generated a GPO report
 
 ## Evidence (Screenshots)
-See: **/screenshots**  
-Key files:
-- OU/group membership: `screenshots/01-aduc-memberof-gg-hr.png`, `screenshots/02-aduc-memberof-gg-sales.png`
-- Client joined to domain: `screenshots/03-client-joined-corp-local.png`
-- Domain user proof: `screenshots/04-domain-user-whoami.png`
-- Password change at next logon: `screenshots/05-password-change-next-logon.png`
-- Password policy proof: `screenshots/06-password-policy.png`
-- USB GPO report: `screenshots/07-gpo-usb-report-1.png`, `screenshots/08-gpo-usb-report-2.png`
-- USB setting proof: `screenshots/09-usb-disable-setting.png`
+- [Screenshots folder](screenshots/)
+
+### Key proof
+- OU/group membership:  
+  - [HR membership](screenshots/01-aduc-memberof-gg-hr.png)  
+  - [Sales membership](screenshots/02-aduc-memberof-gg-sales.png)
+- [Client joined to domain](screenshots/03-client-joined-corp-local.png)
+- [Domain user proof (whoami)](screenshots/04-domain-user-whoami.png)
+- [Password change at next logon](screenshots/05-password-change-next-logon.png)
+- [Password policy proof](screenshots/06-password-policy.png)
+- USB GPO report:  
+  - [Part 1](screenshots/07-gpo-usb-report-1.png)  
+  - [Part 2](screenshots/08-gpo-usb-report-2.png)
+- [USB setting proof](screenshots/09-usb-disable-setting.png)
+
+### Highlight (embedded)
+![Client joined to domain](screenshots/03-client-joined-corp-local.png)
+![Domain user proof](screenshots/04-domain-user-whoami.png)
 
 ## Ticket-Style Notes (Sample)
 - Verified domain discovery and DNS configuration during domain join.
 - Configured account settings to simulate password expiry (“must change at next logon”).
 - Implemented USB storage restriction via Group Policy.
 
-## Next Improvements (Optional)
-- Add drive mapping (Z:) via GPO (Drive Maps or logon script)
-- Add a second Windows 10 client to test GPO scoping
-- Add a ticket log (CSV) + short case studies active-directory-homelab
+
