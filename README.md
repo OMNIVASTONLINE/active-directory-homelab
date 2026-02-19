@@ -55,7 +55,6 @@ Built a small corporate-style Active Directory environment to demonstrate common
 - Implemented USB storage restriction via Group Policy.
 
 
-## Documentation
 - Case studies: [docs/case-studies.md](docs/case-studies.md)
 - Ticket log: [docs/ticket-log.csv](docs/ticket-log.csv)
 
